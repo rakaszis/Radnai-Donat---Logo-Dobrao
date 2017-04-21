@@ -1,0 +1,367 @@
+#dont_want_upsell {
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    color: #555555;    
+    text-shadow: none;
+    transition: transparent;
+    text-decoration:underline;
+    margin-top:10px;
+}
+.mm-submit-disabled { 
+    pointer-events: none; 
+    cursor: default; 
+}
+.mmform-container {
+	background-color: #yellow;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#EDEDED');
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#FAFAFA), to(#EDEDED));
+    background-image: -moz-linear-gradient(center top , #FAFAFA, #EDEDED);
+    border: medium none;
+    border-radius: 3px;
+	moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	-webkit-border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    color: #555555;
+    display: block;
+    font-family: 'Open-Sans',sans-serif;
+    /*font-size: 14px;* betÅ±mÃ©retek is legyenek %-osak*/
+    font-size: 100%;
+    /*margin: 10px; ennek a marginnak itt nincs haszna szerintem, ha valahova kellene akkor az iframe-re, de az meg tÃ¶k egyedi*/
+    text-shadow: 0 1px 0 #FFFFFF;
+	/*width: 669px; ez a width legyen 100%, Ã©s az iframe szÃ©lessÃ©ge hatÃ¡rozza meg az Å±rlap szÃ©lessÃ©gÃ©t*/
+	width: 100%;
+	/* max-width: 900px; */
+
+}
+.mmform-container.mmform-container-button {
+	background-color: inherit;
+	background-image: inherit;
+	border: inherit;
+	box-shadow: inherit;
+}
+table#producttable  {
+	/*font-size: 14px; %-os betÅ±k*/
+	font-size: 100%;
+}
+.mmform-container h2 {
+	padding: 0 0 4px;
+	color: #333333;
+    font-size: 20px;
+    margin: 0 0 5px;
+	font-weight: normal;
+	line-height: normal;
+}
+.mmform-container .form-desc {
+	
+}
+
+fieldset.datafields, fieldset.submitpart, fieldset.titlepart, fieldset.thankyoupart {
+	border: none;
+	margin: 0;
+    padding: 20px 40px 0;
+}
+fieldset.datafields {
+	padding-top: 0px;
+}
+fieldset.submitpart {
+	padding-bottom: 40px;
+}
+div.formrowcontainer {
+	float: left;
+    padding: 0px 0px 20px;
+    width: 100%;
+}
+div.formrowcontainer label.formlabel,div.formrowcontainer label.checkbox-formlabel {
+	color: #333333;    
+    /*font-size: 14px;*/
+     font-size: 100%;     
+	/*padding-top: 11px; erre nincs szÃ¼ksÃ©g*/
+}
+div.formrowcontainer label.radio-label {
+	color: #333333;    
+    font-size: 14px;
+}
+div.formrowcontainer label.formlabel {
+	float: left;
+	/*width: 125px; ez az Ã©rtÃ©k legyen a teljes szÃ©lessÃ©g 30%-a*/
+	width:30%;
+
+}
+div.formrowcontainer div.fieldcontainer{
+	color: #A4A4A4;
+    display: block;
+    /*float: left; itt vegyÃ¼k ki a float-ot, hogy olyan hosszÃº legyen, amilyet szeretnÃ©nk*/
+}
+div.fieldcontainer input[type='text'],div.fieldcontainer input[type='email'],div.fieldcontainer input[type='url'],div.fieldcontainer input[type='number'],div.fieldcontainer input[type='tel'],div.fieldcontainer input[type='password'],div.fieldcontainer select,div.fieldcontainer textarea {
+	border: 1px solid #DDDDDD;
+    border-radius: 3px;
+	moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	-webkit-border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+    font-family: 'Open Sans';
+	font-weight: 300;
+    font-size: 14px;
+    margin: 0 5px;
+    padding: 10px;
+	width: 60%;
+}
+div.fieldcontainer input[type='text']:focus,div.fieldcontainer input[type='email']:focus,div.fieldcontainer input[type='url']:focus,div.fieldcontainer input[type='number']:focus,div.fieldcontainer input[type='tel']:focus,div.fieldcontainer input[type='password']:focus,div.fieldcontainer select:focus,div.fieldcontainer textarea:focus {
+	border-color: #aaa;
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+}
+div.fieldcontainer input[type='tel'].intmobilenumber {
+	/*width: 202px; ez az Ã©rtÃ©k legyen 50%*/
+	width: 50%;
+}
+div.fieldcontainer input.number, div.fieldcontainer input.date {
+	/*width: 101px; ez az Ã©rtÃ©k legyen 25%*/
+	width: 25%;
+}
+div.fieldcontainer input.time {
+	/*width: 50px; ez az Ã©rtÃ©k legyen 10%*/
+	width: 10%;
+}
+div.fieldcontainer select,div.fieldcontainer input[type='file'] {
+	/*width: 306px; ez az Ã©rtÃ©k legyen 64%*/
+	width: 64%;
+	padding: 5px;
+}
+div.mmform-container div.fieldcontainer input.intmobilenumber[type="text"] {
+	width: 44%;
+}
+div.error-container {
+	color: Red;
+	display: none;
+	margin-left: 130px;
+	margin-top: 5px;
+	font-size: 14px;
+}
+
+/* eCommerce part formatting */
+#producttable tr td {
+	padding: 5px 0px;
+}
+
+#producttable td {
+	/*width: 25%;*/
+}
+#producttable tr.subtotal td {
+	border-top: 1px solid #888;
+	padding-top: 3px;
+	font-weight: bold;
+}
+#producttable  tr.last-product td {
+	padding-bottom: 10px;
+}
+.mmform-container .shipping-method-title {
+	font-weight: bold;
+}
+.mmform-container .ordertotalvalue {
+	/*font-size: 16px;*/
+	font-size: 100%;
+	font-weight: bold;
+}
+.mmform-container .ordertotalcontainer {
+	border-top: 1px solid #888;
+	padding-top: 3px;
+	font-weight: bold;
+	margin: 15px 0px 20px 0px; /*ez nem reszponzivitÃ¡si kÃ©rdÃ©s, csak simÃ¡n tÃºl kÃ¶zel van jelenleg az elsÅ‘ nem ecommerce mezÅ‘hÃ¶z.*/
+}
+.mmform-container .ordertotalcontainer.second {
+	border-top: none;
+	margin-top: 0px;
+}
+.mmform-container div.submitcontainer a.submitbutton,.mmform-container button.mmform-event-button,.mmform-container div.submitcontainer button.submitbutton {
+	background-color: #41badd;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#39b2d5', endColorstr='#255fa7');
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#39b2d5), to(#255fa7));
+    background-image: -moz-linear-gradient(center top , #39b2d5, #255fa7);
+    border: 1px solid #5E5E5E;
+	font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+	margin: 0 auto;
+    padding: 15px 0;
+    width: 70%;
+	min-height: 20px;
+	color: #fff;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+	text-align: center;
+	border-radius: 7px;
+	moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-transition: opacity 0.2s ease 0s;
+	display: block;
+	text-decoration: none;
+}
+.mmform-container div.submitcontainer a.submitbutton:hover,.mmform-container div.submitcontainer button.submitbutton:hover,.mmform-container button.mmform-event-button:hover {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#41badd', endColorstr='#1f548c');
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#41badd), to(#1f548c));
+	background-image: -moz-linear-gradient(center top , #41badd, #1f548c);
+}
+.mmform-container button.mmform-event-button {
+	display:inline;
+	height: 45px;
+	width: 100px;
+	padding: 0px;
+}
+.mmform-container div.belowsubmitcontainer {
+	margin-top: 15px;
+}
+
+.mmform-container .subtotal {
+	border-top: 1px solid #888;
+	padding-top: 3px;
+	font-weight: bold;
+	margin:10px 0;
+}
+.mmform-container .container,.mmform-container .mmblock-container {
+	padding-right: 15px;
+	/*padding-left: 15px;*/
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+}
+.mmform-container .nowrap {
+	white-space: nowrap;
+}
+.mmform-container .row {
+	margin-right: -15px;
+	margin-left: -15px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.mmform-container .col-xs-1,.mmform-container .col-md-1,.mmform-container .col-xs-2,.mmform-container .col-md-2,.mmform-container .col-xs-3,.mmform-container .col-md-3,.mmform-container .col-xs-4,.mmform-container .col-md-4,.mmform-container .col-xs-5,.mmform-container .col-md-5,.mmform-container .col-xs-6,.mmform-container .col-md-6,.mmform-container .col-xs-7,.mmform-container .col-md-7,.mmform-container .col-xs-8,.mmform-container .col-md-8,.mmform-container .col-xs-9,.mmform-container .col-md-9,.mmform-container .col-xs-10,.mmform-container .col-md-10,.mmform-container .col-xs-11,.mmform-container .col-md-11,.mmform-container .col-xs-12,.mmform-container .col-md-12 {
+  position: relative;
+  min-height: 1px;
+  margin-top: 10px;
+}
+.mmform-container .col-xs-1,.mmform-container .col-xs-2,.mmform-container .col-xs-3,.mmform-container .col-xs-4,.mmform-container .col-xs-5,.mmform-container .col-xs-6,.mmform-container .col-xs-7,.mmform-container .col-xs-8,.mmform-container .col-xs-9,.mmform-container .col-xs-10,.mmform-container .col-xs-11,.mmform-container .col-xs-12 {
+  float: left;
+}
+.mmform-container .col-xs-12 {
+  width: 100%;
+}
+.mmform-container .col-xs-11 {
+  width: 91.66666667%;
+}
+.mmform-container .col-xs-10 {
+  width: 83.33333333%;
+}
+.mmform-container .col-xs-9 {
+  width: 75%;
+}
+.mmform-container .col-xs-8 {
+  width: 66.66666667%;
+}
+.mmform-container .col-xs-7 {
+  width: 58.33333333%;
+}
+.mmform-container .col-xs-6 {
+  width: 50%;
+}
+.mmform-container .col-xs-5 {
+  width: 41.66666667%;
+}
+.mmform-container .col-xs-4 {
+  width: 33.33333333%;
+}
+.mmform-container .col-xs-3 {
+  width: 25%;
+}
+.mmform-container .col-xs-2 {
+  width: 16.66666667%;
+}
+.mmform-container .col-xs-1 {
+  width: 8.33333333%;
+}
+.mmform-container .productfield-item {display:table; width: 100%}
+.mmform-container .productfield-item > div {display:table-cell;}
+.mmform-container .productfield-item p {margin: 0;}
+
+/********************************************************
+Responsive styles
+*******************************************************/
+@media (max-width: 480px) { 
+
+div.formrowcontainer label.formlabel {
+	float: none;
+	width: 96%;
+}
+
+div.fieldcontainer {margin-top: 10px;}
+fieldset.datafields, fieldset.submitpart, fieldset.titlepart, fieldset.thankyoupart {
+   padding: 20px 20px 0;
+}
+div.fieldcontainer input[type='text'],div.fieldcontainer input[type='email'],div.fieldcontainer input[type='url'],div.fieldcontainer input[type='number'],div.fieldcontainer input[type='tel'],div.fieldcontainer input[type='password'],div.fieldcontainer select,div.fieldcontainer textarea {
+	width: 90%;
+}
+div.fieldcontainer input.date {
+	width: 75%;
+}
+div.fieldcontainer input.time {
+	width: 25%;
+}
+div.error-container {
+	margin-left: 0px;
+}
+fieldset.submitpart {
+	padding-bottom: 10px;
+}
+
+}
+@media (min-width: 600px) {
+	.mmform-container .pos {
+		text-align:right;
+		padding-left: 10px;
+	}
+	.mmform-container .right {
+		text-align:right;
+	}
+  	.mmform-container .col-md-1,.mmform-container .col-md-2,.mmform-container .col-md-3,.mmform-container .col-md-4,.mmform-container .col-md-5,.mmform-container .col-md-6,.mmform-container .col-md-7,.mmform-container .col-md-8,.mmform-container .col-md-9,.mmform-container .col-md-10,.mmform-container .col-md-11,.mmform-container .col-md-12 {
+    	float: left;
+  	}
+  	.mmform-container .col-md-12 {
+    	width: 100%;
+  	}
+  	.mmform-container .col-md-11 {
+    	width: 91.66666667%;
+  	}
+  	.mmform-container .col-md-10 {
+    	width: 83.33333333%;
+  	}
+  	.mmform-container .col-md-9 {
+    	width: 75%;
+  	}
+  	.mmform-container .col-md-8 {
+    	width: 66.66666667%;
+  	}
+  	.mmform-container .col-md-7 {
+	    width: 58.33333333%;
+  	}
+  	.mmform-container .col-md-6 {
+    	width: 50%;
+  	}
+  	.mmform-container .col-md-5 {
+    	width: 41.66666667%;
+  	}
+  	.mmform-container .col-md-4 {
+	    width: 33.33333333%;
+	  }
+  	.mmform-container .col-md-3 {
+    	width: 25%;
+  	}
+  	.mmform-container .col-md-2 {
+    	width: 16.66666667%;
+  	}
+  	.mmform-container .col-md-1 {
+	    width: 8.33333333%;
+  	}
+}
