@@ -150,6 +150,13 @@ body {
     -o-background-size: cover;
 }
 
+.header #logodobrao {
+	display: block;
+    margin: auto;
+    max-width: 30%;
+	height: auto;
+}
+
 /* About */
 
 .about {
