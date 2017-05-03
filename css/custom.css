@@ -153,8 +153,14 @@ body {
 .header #logodobrao {
 	display: block;
     margin: auto;
-    max-width: 30%;
+    max-width: 25%;
 	height: auto;
+}
+
+.header h3 {
+	color: #eeeeee;
+	text-transform: uppercase;
+	text-shadow: 2px 2px #333333;
 }
 
 /* About */
@@ -169,10 +175,15 @@ body {
 	
 }
 
-.about p {
+.about .lead {
 	font-weight: 700;
 	font-size: 1.6em;
 	text-transform: uppercase;
+}
+
+.about p #passarinho{
+	font-weight: 700;
+	font-size: 1.6em;
 }
 
 .about li {
