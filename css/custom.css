@@ -159,8 +159,13 @@ body {
 
 .header h3 {
 	color: #eeeeee;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	text-shadow: 2px 2px #333333;
+}
+
+#text-to-justify {
+	text-align: justify;
+	/* color: yellow; */
 }
 
 /* About */
