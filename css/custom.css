@@ -8,6 +8,10 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.container {
+	/* border: 1px solid red; */
+}
+
 .text-vertical-center {
     display: table-cell;
     text-align: center;
@@ -49,6 +53,30 @@ body {
 .btn-light:active {
     color: #333;
     background-color: rgba(255,255,255,0.8);
+}
+
+/* Fixed Top Menu */
+
+#hidingmenu {
+	z-index: 1;
+    position: fixed;
+	width: 100%;
+    margin: 0;
+    padding-top: 5px;
+	border: 0;
+    list-style: none;
+    background-color: rgba(0,0,0,0.4);
+	text-align: left;
+}
+
+#hidingmenu a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#citedtextanchor {
+	color: rgb(119, 209, 234);
+	/* text-decoration: none; */
 }
 
 /* Side Menu */
