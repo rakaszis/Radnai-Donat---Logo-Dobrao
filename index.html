@@ -24,7 +24,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Logo Dobrão for Capoeira">
     <meta name="author" content="Vagabond Muvek">
-	<meta name="keywords" content="dobrao, capoeira, logo, brasil, bateriando, gift, surprise">
+	<meta name="keywords" content="dobrao, capoeira, logo, brasil, bateriando, gift, surprise, logo dobrao, dabro, instrument">
 
 <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -45,7 +45,20 @@
 <body>
 
  <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+	<div class="container-fluid">
+	<div class="row">
+	<div class="col-md-9">
+	<nav id="hidingmenu" class="navbar navbar-default navbar-fixed-top">
+		<button type="button" class="btn btn-dark btn-lg">
+			<a href="about.html"><i class="fa fa-home"></i>  Home</a>
+		</button>
+		<button type="button" class="btn btn-dark btn-lg">
+		<a href="about.html"><i class="fa fa-user"></i>  About  </a>
+	</button>
+	</nav>
+	</div>
+	<div class="col-md-3">
+	<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i>  Menu  </a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
@@ -66,6 +79,9 @@
             </li>
         </ul>
     </nav>
+	</div>
+	</div>
+	</div>
 
  <!-- Header -->
     <header id="top" class="header">
@@ -982,7 +998,8 @@ function isNumber(n){return!isNaN(parseFloat(n))&&isFinite(n);}</script>
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h2>Logo dobrão para Berimbau :: Capoeira</h2>
 					<br />
-                    <p>Budapest, Hungary</p>
+                    <p>Proudly made in Budapest, Hungary</p>
+					<br />
                     <ul class="list-unstyled">
                         <li>
 							<a href="mailto:logodobrao@gmail.com"><i class="fa fa-envelope-o fa-fw fa-2x"></i>Send Us an E-mail</a>
@@ -1022,6 +1039,8 @@ function isNumber(n){return!isNaN(parseFloat(n))&&isFinite(n);}</script>
 	<script type="text/javascript"src="https://d1ursyhqs5x9h1.cloudfront.net/sw/scripts/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript"src="https://d1ursyhqs5x9h1.cloudfront.net/sw/scripts/mailmaster-scripts-1.0.js"></script>
 	<script type="text/javascript"src="https://d1ursyhqs5x9h1.cloudfront.net/sw/scripts/mmutils.min.js"></script> 
+	<!-- Hiding menu on scroll -->
+	<script src="js/hidingmenu.js"></script>
 
 </body>
 </html>
