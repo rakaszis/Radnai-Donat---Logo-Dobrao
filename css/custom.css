@@ -18,9 +18,10 @@ body {
     vertical-align: middle;
 }
 
-.text-vertical-center h1 {
+.textToCenter {
     margin: 0;
     padding: 0;
+	text-align: center;
     font-size: 5 em;
     font-weight: 700;
 	color: #ffffff;
@@ -178,11 +179,7 @@ body {
     -o-background-size: cover;
 }
 
-.header h1 {
-	font-size: 300%;
-	font-weight: 900;
-	/* color: yellow; */
-}
+
 
 .header #logodobrao {
 	display: block;
@@ -268,14 +265,6 @@ body {
 	background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-}
-
-.callout h1 {
-	text-align: center;
-	font-size: 300%;
-	font-weight: 900;
-	color: #ffffff;
-	text-shadow: 5px 3px black;
 }
 
 /* Portfolio */
